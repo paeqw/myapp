@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:ignore="HardcodedText"
+    android:orientation="vertical">
+
+
+    <ToggleButton
+        android:id="@+id/toggleSectiontoggle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textOff="Show section 2"
+        android:textOn="Hide section 2"
+
+        />
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:columnCount="2"
+        android:rowCount="2">
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Imie"
+
+            />
+
+        <EditText
+            android:id="@+id/firstname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:inputType="text"
+            android:text="Imie" />
+
+
+        <TextView
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:text="Nazwisko"
+
+            />
+
+        <EditText
+            android:id="@+id/lastname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_rowWeight="1"
+            android:layout_columnWeight="1"
+            android:inputType="text"
+            android:text="Nazwisko" />
+
+    </GridLayout>
+
+    <LinearLayout
+        android:id="@+id/section1"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="1">
+
+            <RadioButton
+                android:id="@+id/woman"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="kobieta"
+
+                />
+            <RadioButton
+                android:id="@+id/man"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="wrap_content"
+                android:text="mezczyzna"
+
+                />
+
+        </RadioGroup>
+
+        <Spinner
+            android:layout_width="0dp"
+            android:id="@+id/spinner"
+            android:layout_height="wrap_content"
+            android:layout_weight="3" />
+
+
+    </LinearLayout>
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Zainteresowania"/>
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+    <CheckBox
+        android:id="@+id/cplus"
+
+        android:text="C++"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+        />
+        <CheckBox
+            android:id="@+id/javacheck"
+
+            android:text="Java"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+        />
+        <CheckBox
+            android:id="@+id/csharp"
+
+            android:text="C#"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+        />
+</LinearLayout>
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Zapisz uczestnika"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/btn"
+        android:textColor="@color/white">
+
+
+    </Button>
+</RelativeLayout>
+
+
+
+</LinearLayout>
